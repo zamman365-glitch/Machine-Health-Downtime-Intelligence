@@ -106,15 +106,16 @@ def main():
         )
     )
 
-    # AI4I encoding:
-    # 0 = L
-    # 1 = M
-    # 2 = H
+    # AI4I encoding (verified against the saved type_encoder.pkl —
+    # sklearn's LabelEncoder sorts alphabetically: H, L, M):
+    # 0 = H
+    # 1 = L
+    # 2 = M
 
     machines_df["machine_type"] = machines_df["machine_type"].map({
-        0: "L",
-        1: "M",
-        2: "H"
+        0: "H",
+        1: "L",
+        2: "M"
     })
 
     if machines_df["machine_type"].isna().any():
@@ -281,5 +282,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-    
