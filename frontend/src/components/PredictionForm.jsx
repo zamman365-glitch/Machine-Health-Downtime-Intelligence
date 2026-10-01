@@ -134,7 +134,7 @@ export function PredictionForm({ onSubmit, isLoading, onLiveChange }) {
         </select>
       </div>
 
-      <form onSubmit={handleSubmit} className="space-y-4" novalidate>
+      <form onSubmit={handleSubmit} className="space-y-4" noValidate>
         <TypeSegmentedControl
           value={formData.type}
           onChange={(val) => handleChange("type", val)}
