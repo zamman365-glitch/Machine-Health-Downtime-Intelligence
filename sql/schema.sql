@@ -101,3 +101,5 @@ FROM machines m
 LEFT JOIN sensor_readings sr ON sr.machine_id = m.machine_id
 LEFT JOIN maintenance_log ml ON ml.machine_id = m.machine_id
 LEFT JOIN predictions p ON p.machine_id = m.machine_id;
+
+

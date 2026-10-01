@@ -11,3 +11,6 @@ conn = psycopg2.connect(
 print("PostgreSQL connected successfully!")
 
 conn.close()
+
+
+
